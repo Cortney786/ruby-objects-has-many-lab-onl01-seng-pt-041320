@@ -28,7 +28,12 @@ def add_post_by_title(post_title)
   @@post_count += 1
 end 
 
+# def self.post_count 
+#   @@post_count
+# end
+# end 
+
 def self.post_count 
-  @@post_count
- end
-end 
+    Post.all.count 
+    end
+  end 
